@@ -438,6 +438,8 @@
 		}
 	}
 	// Header Notification Dropdown
+
+
 	.header-notifications-dropdown {
 		@media( max-width: $sm ){
 			left: 20px !important;
@@ -457,6 +459,7 @@
 		ul.ant-dropdown-menu-items {
 			padding: 0;
 			margin: 0;
+			min-width: 300px;
 		}
 	
 		.ant-list-item {
@@ -581,6 +584,7 @@
 				
 			@media( min-width: $md ){
 				margin: 0 7px;
+				width: 50%;
 			}
 			svg {
 				path {
@@ -610,6 +614,10 @@
 		}
 		.sidebar-toggler {
 			display: block;
+			margin-right: auto;
+			@media( min-width: $md ){
+				margin-right: 0;
+			}
 			@media( min-width: $lg ){
 				display: none;
 			}

@@ -1,15 +1,18 @@
 <template>
+    <h3 style="text-align: center;">Pendiente por Aprobar</h3>
     <a-row>
-        <a-col :span="24">
-            <a-table :columns="columns" :row-key="record => record.key" :data-source="data">
-                <template #bodyCell="{ column, record }">
-                    <template v-if="column.key === 'name'">
-                        <a>
-                            {{ record.name }}
-                        </a>
+        <a-col :span="24" :lg="20" >
+            <a-card :bordered="false" class="header-solid h-full" :bodyStyle="{ paddingTop: '12px', }">
+                <a-table :columns="columns" :row-key="record => record.key" :data-source="data">
+                    <template #bodyCell="{ column, record }">
+                        <template v-if="column.key === 'name'">
+                            <a>
+                                {{ record.name }}
+                            </a>
+                        </template>
                     </template>
-                </template>
-            </a-table>
+                </a-table>
+            </a-card>
         </a-col>
     </a-row>
 </template>

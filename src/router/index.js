@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AdminLayout from '@/layouts/AdminLayout.vue'
-import DashboardView from '@/views/DashboardView.vue'
 import TestView from '@/views/TestView.vue'
 import NewView from '@/views/NewView.vue'
 
@@ -12,9 +11,13 @@ const router = createRouter({
       redirect: '/dashboard',
       component: AdminLayout,
       children: [
-        { path: '/dashboard', name: 'Dashboard', component: DashboardView },
-        { path: '/test', name: 'Dashboard', component: TestView },
-        { path: '/new', name: 'New', component: NewView}
+        { path: '/dashboard', name: 'Dashboard', component: NewView },
+        { path: '/test', name: 'Test', component: TestView },
+        { path: '/new', name: 'New', component: NewView},
+        { path: '/sign-in', name: 'Sign-in', component: NewView},
+        { path: '/profile', name: 'Profile', component: NewView},
+        { path: '/sign-up', name: 'Sign-up', component: NewView},
+        { path: '/rtl', name: 'rtl', component: NewView},
       ]
     },
   ]

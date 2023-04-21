@@ -4,7 +4,7 @@
 		:collapsed="sidebarCollapsed" @collapse="$emit('toggleSidebar', !sidebarCollapsed)" :trigger="null"
 		:class="['ant-layout-sider-' + sidebarColor, 'ant-layout-sider-' + sidebarTheme]" theme="light"
 		:style="{ backgroundColor: 'transparent', }">
-		<div class="brand"><img src="images/logo-ct-black.png" alt=""> <span>Yosbp Dashboard</span></div>
+		<div class="brand"><img src="/images/logo-ct-black.png" alt=""> <span>Yosbp Dashboard</span></div>
 		<hr>
 
 		<!-- Sidebar Navigation Menu -->
@@ -52,7 +52,7 @@
 								fill="#111827" />
 						</svg>
 					</span>
-					<span class="label">Test</span>
+					<span class="label">Billing</span>
 				</router-link>
 			</a-menu-item>
 			<a-menu-item>
@@ -68,7 +68,7 @@
 				</router-link>
 			</a-menu-item>
 			<a-menu-item class="menu-item-header">
-				Account Pages
+				OTHER PAGES
 			</a-menu-item>
 			<a-menu-item>
 				<router-link to="/profile">

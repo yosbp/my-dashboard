@@ -38,7 +38,7 @@
 
 				<template v-else-if="column.key === 'completion'">
 					<span class="font-bold text-muted text-sm">{{ record.completion.label ? record.completion.label : record.completion }}</span>
-					<a-progress :percent="record.completion ? record.completion : record.completion" :show-info="false" size="small"
+					<a-progress :percent="record.completion.value ? record.completion.value : record.completion" :show-info="false" size="small"
 						:status="record.completion.status ? record.completion.status : 'normal'" />
 				</template>
 			</template>

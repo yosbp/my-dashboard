@@ -54,13 +54,16 @@
 		}
 	}
 }
-.ant-table-body {
-    overflow: auto;
+
+.ant-table-content {
+	overflow: auto;
 
 	@media(min-width: $xl) {
 		overflow: visible;
 	}
 
+}
+.ant-table-body {
 	.btn-edit {
 		font-weight: $fw-semibold;
 		color: $color-muted;
