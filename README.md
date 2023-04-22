@@ -1,4 +1,8 @@
-# dashboard-template
+# dashboard-Admin-template
+
+Admin Template based in Muse Vue Ant Design Dashboard, updated vue3 and all packages.
+
+im Current fixed and develop.
 
 This template should help get you started developing with Vue 3 in Vite.
 
