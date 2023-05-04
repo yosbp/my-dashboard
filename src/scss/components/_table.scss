@@ -54,7 +54,13 @@
 		}
 	}
 }
+.ant-table-cell{
+	min-width: 150px;
 
+	@media(min-width: $md) {
+		min-width: none;
+	}
+}
 .ant-table-content {
 	overflow: auto;
 

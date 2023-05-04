@@ -4,7 +4,7 @@
 		:collapsed="sidebarCollapsed" @collapse="$emit('toggleSidebar', !sidebarCollapsed)" :trigger="null"
 		:class="['ant-layout-sider-' + sidebarColor, 'ant-layout-sider-' + sidebarTheme]" theme="light"
 		:style="{ backgroundColor: 'transparent', }">
-		<div class="brand"><img src="/images/logo-ct-black.png" alt=""> <span>Yosbp Dashboard</span></div>
+		<div class="brand"><img src="/images/logo3.svg" alt=""> <span>Yosbp Dashboard</span></div>
 		<hr>
 
 		<!-- Sidebar Navigation Menu -->
@@ -28,7 +28,7 @@
 				</router-link>
 			</a-menu-item>
 			<a-menu-item>
-				<router-link to="/new">
+				<router-link to="/tables">
 					<span class="icon">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -39,11 +39,11 @@
 								fill="#111827" />
 						</svg>
 					</span>
-					<span class="label">New</span>
+					<span class="label">Tables</span>
 				</router-link>
 			</a-menu-item>
 			<a-menu-item>
-				<router-link to="/test">
+				<router-link to="/metrics">
 					<span class="icon">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4 4C2.89543 4 2 4.89543 2 6V7H18V6C18 4.89543 17.1046 4 16 4H4Z" fill="#111827" />
@@ -52,19 +52,7 @@
 								fill="#111827" />
 						</svg>
 					</span>
-					<span class="label">Billing</span>
-				</router-link>
-			</a-menu-item>
-			<a-menu-item>
-				<router-link to="/rtl">
-					<span class="icon">
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M3 6C3 4.34315 4.34315 3 6 3H16C16.3788 3 16.725 3.214 16.8944 3.55279C17.0638 3.89157 17.0273 4.29698 16.8 4.6L14.25 8L16.8 11.4C17.0273 11.703 17.0638 12.1084 16.8944 12.4472C16.725 12.786 16.3788 13 16 13H6C5.44772 13 5 13.4477 5 14V17C5 17.5523 4.55228 18 4 18C3.44772 18 3 17.5523 3 17V6Z"
-								fill="#111827" />
-						</svg>
-					</span>
-					<span class="label">RTL</span>
+					<span class="label">Metrics</span>
 				</router-link>
 			</a-menu-item>
 			<a-menu-item class="menu-item-header">
@@ -83,7 +71,7 @@
 				</router-link>
 			</a-menu-item>
 			<a-menu-item>
-				<router-link to="/sign-in">
+				<router-link to="/login">
 					<span class="icon">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd"
@@ -120,6 +108,14 @@
 						</svg>
 					</span>
 					<span class="label">Sign Up</span>
+				</router-link>
+			</a-menu-item>
+			<a-menu-item>
+				<router-link to="/404">
+					<span class="icon">
+						<svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M9,39h6v8c0,0.552,0.448,1,1,1s1-0.448,1-1v-8h3c0.552,0,1-0.448,1-1s-0.448-1-1-1h-3v-2c0-0.552-0.448-1-1-1s-1,0.448-1,1 v2h-5V27c0-0.552-0.448-1-1-1s-1,0.448-1,1v11C8,38.552,8.448,39,9,39z"></path> <path d="M40,39h6v8c0,0.552,0.448,1,1,1s1-0.448,1-1v-8h3c0.552,0,1-0.448,1-1s-0.448-1-1-1h-3v-2c0-0.552-0.448-1-1-1 s-1,0.448-1,1v2h-5V27c0-0.552-0.448-1-1-1s-1,0.448-1,1v11C39,38.552,39.448,39,40,39z"></path> <path d="M29.5,48c3.584,0,6.5-2.916,6.5-6.5v-9c0-3.584-2.916-6.5-6.5-6.5S23,28.916,23,32.5v9C23,45.084,25.916,48,29.5,48z M25,32.5c0-2.481,2.019-4.5,4.5-4.5s4.5,2.019,4.5,4.5v9c0,2.481-2.019,4.5-4.5,4.5S25,43.981,25,41.5V32.5z"></path> <path d="M0,0v14v46h60V14V0H0z M2,2h56v10H2V2z M58,58H2V14h56V58z"></path> <polygon points="54.293,3.293 52,5.586 49.707,3.293 48.293,4.707 50.586,7 48.293,9.293 49.707,10.707 52,8.414 54.293,10.707 55.707,9.293 53.414,7 55.707,4.707 "></polygon> <path d="M3,11h39V3H3V11z M5,5h35v4H5V5z"></path> </g> </g></svg>
+					</span>
+					<span class="label">404 Site</span>
 				</router-link>
 			</a-menu-item>
 		</a-menu>

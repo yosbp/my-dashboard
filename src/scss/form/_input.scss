@@ -7,20 +7,14 @@
 	border-radius: 6px;
 }
 
-.layout-dashboard-rtl {
-	.header-control {
-		.header-search {
-			.ant-input {
-				&:not(:first-child) {
-					padding-right: 32px;
-					padding-left: 11px;
-				}
-			}
-		}
-	}
-
-	.ant-input-affix-wrapper .ant-input-prefix {
-		right: 12px;
-		left: auto;
-	}
+.ant-form-item-label {
+	padding: 0 !important;
 }
+.ant-input-password {
+	border-radius: 6px;
+	height: 40px;
+}
+#basic_password{
+	height: 33px;
+}
+

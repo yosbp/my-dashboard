@@ -59,50 +59,21 @@
         </a-row>
         <!-- / Table & Timeline -->
 
-        <!-- Cards -->
-        <a-row :gutter="24" type="flex" align="stretch">
-            <a-col :span="24" :xl="14" class="mb-24">
-
-                <!-- Information Card 1 -->
-                <CardInfo></CardInfo>
-                <!-- / Information Card 1 -->
-
-            </a-col>
-            <a-col :span="24" :xl="10" class="mb-24">
-
-                <!-- Information Card 2 -->
-                <CardInfo2></CardInfo2>
-                <!-- / Information Card 2 -->
-
-            </a-col>
-        </a-row>
-        <!-- / Cards -->
-
     </div>
 </template>
 
 <script setup>
-
 // Bar chart for "Active Users" card.
 import CardBarChart from '../components/Cards/CardBarChart.vue';
-
 // Line chart for "Sales Overview" card.
 import CardLineChart from '../components/Cards/CardLineChart.vue';
-
 // Counter Widgets
 import WidgetCounter from '../components/Widgets/WidgetCounter.vue';
-
 // "Projects" table component.
 import CardProjectTable from '../components/Cards/CardProjectTable.vue';
-
 // Order History card component.
 import CardOrderHistory from '../components/Cards/CardOrderHistory.vue';
 
-// Information card 1.
-import CardInfo from '../components/Cards/CardInfo.vue';
-
-// Information card 2.
-import CardInfo2 from '../components/Cards/CardInfo2.vue';
 
 // Counter Widgets stats
 const stats = [
@@ -158,22 +129,23 @@ const tableColumns = [
     {
         title: 'COMPANIES',
         dataIndex: 'company',
-        scopedSlots: { customRender: 'company' },
+        key: 'company',
         width: 300,
     },
     {
         title: 'MEMBERS',
         dataIndex: 'members',
-        scopedSlots: { customRender: 'members' },
+        key: 'members'
     },
     {
         title: 'BUDGET',
         dataIndex: 'budget',
         class: 'font-bold text-muted text-sm',
+        key: 'budget',
     },
     {
         title: 'COMPLETION',
-        scopedSlots: { customRender: 'completion' },
+        key: 'completion',
         dataIndex: 'completion',
     },
 ];

@@ -34,15 +34,12 @@
 							src="https://api.dicebear.com/6.x/pixel-art/svg?seed=Gizmog">
 						</a-avatar>
 						<template #overlay>
-							<a-menu>
+							<a-menu style="margin: 15px 20px 0 0;">
 								<a-menu-item>
-									<a href="javascript:;">1st menu item</a>
+									<a href="javascript:;">Profile</a>
 								</a-menu-item>
 								<a-menu-item>
-									<a href="javascript:;">2nd menu item</a>
-								</a-menu-item>
-								<a-menu-item>
-									<a href="javascript:;">3rd menu item</a>
+									<a href="javascript:;">Logout</a>
 								</a-menu-item>
 							</a-menu>
 						</template>
@@ -138,7 +135,15 @@ const notificationsData = [
 		time: '13 minutes ago',
 	},
 	{
-		title: 'New album by Travis Scott',
+		title: 'Invoice Paid',
+		svg: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill="#1890FF" d="M4 4C2.89543 4 2 4.89543 2 6V7H18V6C18 4.89543 17.1046 4 16 4H4Z"/>
+					<path fill="#1890FF" fill-rule="evenodd" clip-rule="evenodd" d="M18 9H2V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V9ZM4 13C4 12.4477 4.44772 12 5 12H6C6.55228 12 7 12.4477 7 13C7 13.5523 6.55228 14 6 14H5C4.44772 14 4 13.5523 4 13ZM9 12C8.44772 12 8 12.4477 8 13C8 13.5523 8.44772 14 9 14H10C10.5523 14 11 13.5523 11 13C11 12.4477 10.5523 12 10 12H9Z"/>
+				</svg>`,
+		time: '2 days ago',
+	},
+	{
+		title: 'New album by Kendrick Lamar',
 		svg: `<svg width="20" height="20" viewBox="0 0 107 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<title>logo-spotify</title>
 					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -147,15 +152,7 @@ const notificationsData = [
 						</g>
 					</g>
 				</svg>`,
-		time: '1 day ago',
-	},
-	{
-		title: 'Payment completed',
-		svg: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill="#1890FF" d="M4 4C2.89543 4 2 4.89543 2 6V7H18V6C18 4.89543 17.1046 4 16 4H4Z"/>
-					<path fill="#1890FF" fill-rule="evenodd" clip-rule="evenodd" d="M18 9H2V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V9ZM4 13C4 12.4477 4.44772 12 5 12H6C6.55228 12 7 12.4477 7 13C7 13.5523 6.55228 14 6 14H5C4.44772 14 4 13.5523 4 13ZM9 12C8.44772 12 8 12.4477 8 13C8 13.5523 8.44772 14 9 14H10C10.5523 14 11 13.5523 11 13C11 12.4477 10.5523 12 10 12H9Z"/>
-				</svg>`,
-		time: '2 days ago',
+		time: '6 day ago',
 	},
 ];
 
